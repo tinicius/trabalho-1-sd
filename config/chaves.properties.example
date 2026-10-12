@@ -1,0 +1,5 @@
+# config/chaves.properties  (nao versionar; permissao 600)
+# Valores FICTICIOS. Gere chaves reais com: python3 scripts/gerar_chave.py --par
+# As duas chaves devem ter 64 caracteres hexadecimais e ser diferentes entre si.
+chave.transito=000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+chave.repositorio=ffeeddccbbaa99887766554433221100ffeeddccbbaa99887766554433221100

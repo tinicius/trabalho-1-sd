@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Comunicador Distribuido de Grupo</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Comunicador</h1>
+    <span id="estado-conexao" class="estado" role="status" aria-live="polite" hidden></span>
+    <button type="button" id="botao-reconectar" class="secundario" hidden>Tentar novamente</button>
+    <button type="button" id="botao-sair" class="secundario sair" hidden>Sair</button>
+  </header>
+
+  <main>
+    <!-- Tela de login: visivel antes da autenticacao -->
+    <section id="tela-login" class="tela" aria-labelledby="titulo-login">
+      <h2 id="titulo-login">Entrar</h2>
+      <form id="form-login" autocomplete="off">
+        <label for="campo-login">Login</label>
+        <input id="campo-login" name="login" type="text" required maxlength="32" autocomplete="username">
+
+        <label for="campo-senha">Senha</label>
+        <input id="campo-senha" name="senha" type="password" required autocomplete="current-password">
+
+        <label for="campo-chave">Chave de transito (64 digitos hexadecimais)</label>
+        <input id="campo-chave" name="chave" type="password" required
+               pattern="[0-9a-fA-F]{64}" maxlength="64" spellcheck="false" autocomplete="off">
+
+        <p id="info-login" class="info" role="status" hidden></p>
+        <p id="erro-login" class="erro" role="alert" hidden></p>
+        <div class="acoes">
+          <button type="submit" id="botao-entrar">Entrar</button>
+          <button type="button" id="botao-ir-cadastro" class="secundario">Criar conta</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Tela de cadastro -->
+    <section id="tela-cadastro" class="tela" aria-labelledby="titulo-cadastro" hidden>
+      <h2 id="titulo-cadastro">Criar conta</h2>
+      <form id="form-cadastro" autocomplete="off">
+        <label for="cad-login">Login</label>
+        <input id="cad-login" name="login" type="text" required maxlength="32">
+
+        <label for="cad-apelido">Apelido</label>
+        <input id="cad-apelido" name="apelido" type="text" required maxlength="32">
+
+        <label for="cad-senha">Senha</label>
+        <input id="cad-senha" name="senha" type="password" required autocomplete="new-password">
+
+        <label for="cad-chave">Chave de transito (64 digitos hexadecimais)</label>
+        <input id="cad-chave" name="chave" type="password" required
+               pattern="[0-9a-fA-F]{64}" maxlength="64" spellcheck="false" autocomplete="off">
+
+        <label for="cad-cor">Cor do apelido</label>
+        <input id="cad-cor" name="cor" type="color" value="#1a73e8">
+
+        <fieldset>
+          <legend>Avatar</legend>
+          <div id="lista-avatares" class="grade-avatares"></div>
+        </fieldset>
+
+        <p id="erro-cadastro" class="erro" role="alert" hidden></p>
+        <div class="acoes">
+          <button type="submit" id="botao-cadastrar">Cadastrar</button>
+          <button type="button" id="botao-ir-login" class="secundario">Voltar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Tela da sala: oculta ate a autenticacao -->
+    <section id="tela-sala" class="tela tela-sala" aria-label="Sala" hidden>
+      <div id="lista-mensagens" class="mensagens" role="log" aria-live="polite"></div>
+
+      <p id="aviso-sala" class="aviso" role="status" hidden></p>
+
+      <div id="seletor-emojis" class="seletor-emojis" hidden></div>
+      <div id="seletor-figurinhas" class="seletor-figurinhas" hidden></div>
+
+      <p id="erro-envio" class="erro" role="alert" hidden></p>
+
+      <form id="form-envio" class="envio" autocomplete="off">
+        <button type="button" id="botao-emojis" class="secundario" aria-label="Emojis">&#128512;</button>
+        <button type="button" id="botao-figurinhas" class="secundario" aria-label="Figurinhas">Figurinhas</button>
+        <input id="campo-texto" name="texto" type="text" aria-label="Mensagem" placeholder="Digite uma mensagem">
+        <button type="submit" id="botao-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- main.js importa chave.js (le #chave=<hex>, apaga o fragmento da URL e cria o
+       identificador do dispositivo) e liga conexao, historico, erros e envio. -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{"mid":"0e3e3945-80b1-4e48-803f-f6f77e30409a","remetente":{"login":"joao","apelido":"joao","avatar":"av_04","cor":"#1E88E5"},"ts":"2026-10-11T13:00:20.369Z","tipo":"texto","conteudo":"AYl2X75fLuF/n6YnTWz2DNqfGSjDyytY"}
+{"mid":"ccbc2b44-fdf1-4685-a5cd-89bda1674f2f","remetente":{"login":"vini","apelido":"vini","avatar":"av_01","cor":"#1E88E5"},"ts":"2026-10-11T13:00:24.701Z","tipo":"texto","conteudo":"ARtKEdUzQ4SeIMdQLkYxfObmYy6a9UHe"}
+{"mid":"3c877e38-b0b0-400f-96f4-5032e50284b3","remetente":{"login":"pedro","apelido":"pedro","avatar":"av_10","cor":"#1A73E8"},"ts":"2026-10-11T13:01:25.495Z","tipo":"texto","conteudo":"AdwX0OpTtGBFmd9COZoxYg3dzQDmXN47cQ=="}
+{"mid":"a487a1e5-ea77-4546-8366-dd76517a9996","remetente":{"login":"vini","apelido":"vini","avatar":"av_01","cor":"#1E88E5"},"ts":"2026-10-11T13:01:28.070Z","tipo":"texto","conteudo":"AXIg+PHPbbg0/zcR50M6eodXsJFEvnIulNE="}
+{"mid":"216f4e38-dbd5-4e81-ba30-0e6560b6425b","remetente":{"login":"ana","apelido":"ana","avatar":"av_01","cor":"#1E88E5"},"ts":"2026-10-11T13:04:35.328Z","tipo":"texto","conteudo":"AdpVGZktDGo07nPtuZ1EYvRF7pu6wDBQ4Q=="}
+{"mid":"02b59cbc-2c96-45dd-a79a-b811331d692e","remetente":{"login":"ana","apelido":"ana","avatar":"av_01","cor":"#1E88E5"},"ts":"2026-10-11T13:06:01.595Z","tipo":"texto","conteudo":"ATmS5NJFyltE/nXr96w93O443/g="}

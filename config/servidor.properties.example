@@ -1,0 +1,16 @@
+# config/servidor.properties  (nao versionar; copie este .example e ajuste)
+# Cada propriedade aceita sobreposicao por variavel de ambiente.
+db.url=jdbc:postgresql://localhost:5432/comunicador
+db.usuario=comunicador
+db.senha=<definir>
+porta.tcp=9000
+porta.ws=9001
+porta.http=8080
+web.raiz=cliente-web
+recursos.raiz=recursos
+dados.dir=dados
+ws.origens_permitidas=http://localhost:8080
+retencao.logs.dias=90
+retencao.envios.meses=12
+limpeza.intervalo.minutos=60
+senha.iteracoes=100000

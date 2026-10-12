@@ -1,0 +1,7 @@
+{
+  "name": "comunicador-cliente-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cliente_Web do Comunicador Distribuido de Grupo (HTML, CSS e JavaScript)",
+  "type": "module"
+}

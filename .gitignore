@@ -1,0 +1,15 @@
+.gitignore
+
+# Build (Maven)
+target/
+
+# Dependencias e build (Node.js)
+node_modules/
+dist/
+
+# Build e cache (Python)
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+.DS_Store
